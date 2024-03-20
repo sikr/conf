@@ -1,0 +1,63 @@
+;=
+;= Aliases for use with doskey
+;=
+;= To apply run:
+;=   doskey /macrofile=%HOME%\conf\windows\.aliases
+;=
+cd=%HOME%\scripts\cd.cmd $*
+cds=cd %HOME%\scripts
+clear=cls
+e.=explorer .
+;= Local everything search
+ef=%HOME%\utils\everything\es.exe -path .\ $1
+;= Global everything search
+eg=%HOME%\utils\everything\es.exe $1
+;= Start everything
+et=%HOME%\utils\everything\Everything.exe
+;= Find file within current directory; output: relative path
+ff="C:\Program Files\Git\usr\bin\find.exe" -name $1
+fs=findstr $*
+ga=git add $*
+gb=git branch $*
+gc=git commit $*
+gcl=git config --list --show-origin
+gcm=git commit -m $*
+gcp=git cherry-pick $*
+gd=git diff $*
+gdt=git difftool $*
+gf=git fetch $*
+gk=gitk
+gka=gitk --all
+gl=git log
+gln=git log -n$1
+glo=git log --oneline
+glon=git log --oneline -n$1
+glop=git log --oneline -n25
+glmy=git log  --author="%GIT_AUTHOR_NAME%"
+glnmy=git log -n$1 --author="%GIT_AUTHOR_NAME%"
+glomy=git log --oneline --author="%GIT_AUTHOR_NAME%"
+glonmy=git log --oneline -n$1 --author="%GIT_AUTHOR_NAME%"
+glopmy=git log --oneline -n25 --author="%GIT_AUTHOR_NAME%"
+gm=git merge $*
+;=gmom=git merge origin main $*
+;=gprom=git pull --rebase origin main
+gp=git pull $*
+gpl=git pull $*
+gps=git push $*
+gr=git rebase $*
+grs=git stash pop
+;=grom=git rebase origin main $*
+gs=git status $*
+gsv=git stash push
+gsw=git switch $*
+hs=sh.cmd $*
+ip=ipconfig | grep "IPv4 Address." | awk "{print $NF}"
+ip4=ipconfig | grep "IPv4 Address." | awk "{print $NF}"
+ip6=ipconfig | grep "IPv6 Address." | awk "{print $NF}"
+ll=ls -la --color $*
+lp=ps -W | grep $1
+sshr=ssh $1 -R 52698:127.0.0.1:52698
+subl="/Program Files/Sublime Text/sublime_text.exe" $*
+tl=tasklist $*
+;= Find file within current directory; output: full path
+wf=where /r . $1

@@ -1,0 +1,51 @@
+# This is Git's per-user configuration file.
+#[user]
+#	name = SiKr
+#	email = 6181231+sikr@users.noreply.github.com
+[safe]
+[diff]
+	tool = bc
+[difftool "bc"]
+	path = c:/Program Files/Beyond Compare 4/bcomp.exe
+[merge]
+	tool = bc
+[mergetool "bc"]
+	path = c:/Program Files/Beyond Compare 4/bcomp.exe
+[difftool]
+	prompt = false
+[mergetool]
+	keepBackup = false
+[push]
+	autoSetupRemote = true
+[pull]
+	rebase = true
+[alias]
+	co = checkout
+	a = add
+	b = branch
+	c = commit
+	cl = config --list --show-origin
+	cm = commit -m
+	cp = cherry-pick
+	d = diff
+	dt = difftool
+	f = fetch
+	l = log -n1
+	l1 = log -n1
+	l5 = log -n5
+	l10 = log -n10
+	ln = log -n
+	lo = log --oneline -n1
+	lo1 = log --oneline -n1
+	lo5 = log --oneline -n5
+	lo10 = log --oneline -n10
+	lon = log --oneline -n
+	m = merge
+	mom = merge origin main
+	prom = pull --rebase origin main
+	r = rebase
+	res = stash pop
+	rom = rebase origin main
+	s = status
+	sav = stash push
+	sw = switch
