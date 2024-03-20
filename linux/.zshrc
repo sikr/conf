@@ -37,3 +37,6 @@ bindkey "^[[1;5D" backward-word
 
 # Enable tab completion at . and ..
 zstyle ':completion:*' special-dirs true
+
+# Allow go to parent dir "cd .." w/o "cd"
+setopt autocd
