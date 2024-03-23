@@ -5,6 +5,7 @@
 ;=   doskey /macrofile=%HOME%\conf\windows\.aliases
 ;=
 cd=%HOME%\scripts\cd.cmd $*
+cdp=cd %HOME%\projects
 cds=cd %HOME%\scripts
 clear=cls
 e.=explorer .
