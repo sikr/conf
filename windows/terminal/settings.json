@@ -282,6 +282,24 @@
                 "snapOnInput": true,
                 "startingDirectory": null,
                 "useAcrylic": false
+            },
+            {
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "closeOnExit": "automatic",
+                "colorScheme": "Tango Dark",
+                "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
+                "cursorShape": "bar",
+                "elevate": false,
+                "guid": "{603897e5-ccd3-43e6-89e4-9b6b5eebb3e3}",
+                "hidden": false,
+                "historySize": 9001,
+                "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
+                "name": "Git Bash",
+                "padding": "8, 8, 8, 8",
+                "snapOnInput": true,
+                "startingDirectory": "%HOME%",
+                "useAcrylic": false
             }
         ]
     },
